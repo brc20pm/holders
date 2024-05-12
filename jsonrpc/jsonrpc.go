@@ -119,7 +119,7 @@ func (c *Client) CallContract(param CallParam) (any, error) {
 	if err != nil {
 		return nil, err
 	}
-	return c.Call("bit_call", pByte)
+	return c.Call("ord_call", pByte)
 }
 
 // 获取节点处理完成的最新区块号
@@ -202,7 +202,7 @@ func (c *Client) Call(method string, param []byte) (any, error) {
 	result := response.Result
 
 	switch method {
-	case "bit_call":
+	case "ord_call":
 		return result.pResult()
 	case "bestBlockNumber":
 		return result.pBestBlockNumber()

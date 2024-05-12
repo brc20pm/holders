@@ -2,6 +2,7 @@ package api
 
 import (
 	"fmt"
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"holders/models"
 	"net/http"
@@ -15,6 +16,21 @@ type GinService struct {
 func NewGinService() *GinService {
 	//gin.SetMode(gin.ReleaseMode)
 	service := gin.Default()
+
+	// 创建一个CORS配置
+	config := cors.DefaultConfig()
+
+	// 如果你只想允许特定的源进行访问，可以这样设置
+	//config.AllowOrigins = []string{"http://example.com"}
+
+	// 允许所有来源进行访问（请注意，这通常只在开发环境中使用，生产环境应更严格）
+	config.AllowAllOrigins = true
+
+	// 如果需要的话，你还可以配置允许的HTTP方法、头部等其他选项
+
+	// 应用CORS中间件到所有路由
+	service.Use(cors.New(config))
+
 	return &GinService{service}
 }
 

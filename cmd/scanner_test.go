@@ -32,6 +32,11 @@ func TestScanner(t *testing.T) {
 	service.Run(":8085")
 }
 
+func TestService(t *testing.T) {
+	service := api.NewGinService()
+	service.Run(":8085")
+}
+
 
 func TestServer(t *testing.T) {
 	service := api.NewGinService()

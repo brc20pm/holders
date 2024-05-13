@@ -43,6 +43,12 @@ func (g *GinService) loadGroupAPI() *gin.RouterGroup {
 
 	//持有数据
 	{
+
+		group.GET("/lands/:owner",getLands)
+		group.POST("/batch_balance",getBalances)
+
+		group.POST("/ord_call",ordCall)
+
 		//代币信息
 		group.GET("/token/:kid", getToken)
 		//获取钱包持有数据

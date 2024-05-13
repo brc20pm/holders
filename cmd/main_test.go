@@ -23,15 +23,15 @@ func TestBestBlockNumber(t *testing.T) {
 }
 
 func TestCallContract(t *testing.T) {
-	cli, err := jsonrpc.NewClient("http://127.0.0.1:7399/jrpc")
+	cli, err := jsonrpc.NewClient("http://152.53.33.145:7399/jrpc")
 	if err != nil {
 		fmt.Println(err)
 	}
 
-	params := []string{"1"}
+	params := []string{"tb1p0yfutsrnm4hfs4yvfqr2x7l906ttnksnw2df5n3q25n8e5kngecq8u4du0"}
 
 	param := jsonrpc.CallParam{
-		KID:    "kfc3f6e0ec06038784e17876450ee6af8d32132dd5",
+		KID:    "bit8bedcc4d7173e360f9d2321890d541c868699a5",
 		Method: "$balanceOf",
 		Params:   params,
 	}

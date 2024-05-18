@@ -27,46 +27,19 @@ func getLands(c *gin.Context)  {
 		return
 	}
 
-	//param := jsonrpc.CallParam{
-	//	KID:    "",
-	//	Method: "",
-	//	Params: []interface{}{owner},
-	//}
+	param := jsonrpc.CallParam{
+		KID:    conf.FarmScript,
+		Method: "$getLands",
+		Params: []interface{}{owner},
+	}
 
-	//result, err := call(param)
-	//if err != nil {
-	//	handleError(c, err)
-	//	return
-	//}
+	result, err := call(param)
+	if err != nil {
+		handleError(c, err)
+		return
+	}
 
-	var lands []land
-	lands = append(lands, land{
-		Index: 1,
-		SeedIndex: 0,
-		Unix: 0,
-	},land{
-		Index: 2,
-		SeedIndex: 1,
-		Unix: 10,
-	},land{
-		Index: 3,
-		SeedIndex: 2,
-		Unix: 100,
-	},land{
-		Index: 4,
-		SeedIndex: 3,
-		Unix: 100,
-	},land{
-		Index: 5,
-		SeedIndex: 4,
-		Unix: 100,
-	},land{
-		Index: 6,
-		SeedIndex: 4,
-		Unix: 100,
-	})
-
-	c.JSON(http.StatusOK,lands)
+	c.JSON(http.StatusOK,result)
 }
 
 func getBalances(c *gin.Context)  {

@@ -2,6 +2,7 @@ package scanner
 
 import (
 	"fmt"
+	"holders/conf"
 	"holders/db"
 	"holders/jsonrpc"
 	"log"
@@ -37,7 +38,7 @@ func (r *rpc) FilterLogs() {
 
 		if localNumber == 0 {
 			//协议运行区块 - 1
-			localNumber = 2588380
+			localNumber = conf.StartNumber
 		}
 
 		////模拟需要同步的区块

@@ -137,3 +137,111 @@
 20:21:58.638569 table@remove removed @24
 20:21:58.639071 table@remove removed @21
 20:21:58.639071 table@remove removed @20
+=============== May 18, 2024 (CST) ===============
+14:58:24.979247 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:58:24.987573 version@stat F·[0 1] S·188B[0B 188B] Sc·[0.00 0.00]
+14:58:24.987573 db@open opening
+14:58:24.987573 journal@recovery F·1
+14:58:24.988084 journal@recovery recovering @33
+14:58:24.990507 memdb@flush created L0@36 N·132 S·1KiB "btc..Net,v693":"ord..c35,v606"
+14:58:24.990507 version@stat F·[1 1] S·1KiB[1KiB 188B] Sc·[0.25 0.00]
+14:58:24.993425 db@janitor F·4 G·0
+14:58:24.993425 db@open done T·5.8523ms
+=============== May 18, 2024 (CST) ===============
+14:59:04.631367 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:59:04.640050 version@stat F·[1 1] S·1KiB[1KiB 188B] Sc·[0.25 0.00]
+14:59:04.640050 db@open opening
+14:59:04.640555 journal@recovery F·1
+14:59:04.640615 journal@recovery recovering @37
+14:59:04.642871 memdb@flush created L0@39 N·25 S·330B "btc..Net,v719":"btc..Net,v695"
+14:59:04.642871 version@stat F·[2 1] S·1KiB[1KiB 188B] Sc·[0.50 0.00]
+14:59:04.645455 db@janitor F·5 G·0
+14:59:04.645455 db@open done T·5.4044ms
+=============== May 19, 2024 (CST) ===============
+12:08:11.869406 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:08:11.886043 version@stat F·[2 1] S·1KiB[1KiB 188B] Sc·[0.50 0.00]
+12:08:11.886043 db@open opening
+12:08:11.886043 journal@recovery F·1
+12:08:11.886547 journal@recovery recovering @40
+12:08:11.887950 memdb@flush created L0@42 N·72 S·691B "btc..Net,v792":"btc..Net,v721"
+12:08:11.888464 version@stat F·[3 1] S·2KiB[2KiB 188B] Sc·[0.75 0.00]
+12:08:11.892105 db@janitor F·6 G·0
+12:08:11.892105 db@open done T·6.0627ms
+=============== May 21, 2024 (CST) ===============
+16:34:00.193976 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:34:00.218544 version@stat F·[3 1] S·2KiB[2KiB 188B] Sc·[0.75 0.00]
+16:34:00.218544 db@open opening
+16:34:00.218544 journal@recovery F·1
+16:34:00.219090 journal@recovery recovering @43
+16:34:00.222570 memdb@flush created L0@45 N·118 S·1KiB "btc..Net,v911":"btc..Net,v794"
+16:34:00.223084 version@stat F·[4 1] S·3KiB[3KiB 188B] Sc·[1.00 0.00]
+16:34:00.228202 db@janitor F·7 G·0
+16:34:00.228202 db@open done T·9.6578ms
+16:34:00.228202 table@compaction L0·4 -> L1·1 S·3KiB Q·912
+16:34:00.231126 table@build created L1@48 N·3 S·242B "btc..Net,v911":"ord..94a,v6"
+16:34:00.231126 version@stat F·[0 1] S·242B[0B 242B] Sc·[0.00 0.00]
+16:34:00.232869 table@compaction committed F-4 S-3KiB Ke·0 D·346 T·4.6672ms
+16:34:00.233373 table@remove removed @45
+16:34:00.233373 table@remove removed @42
+16:34:00.233889 table@remove removed @39
+16:34:00.233889 table@remove removed @36
+16:34:00.234403 table@remove removed @35
+=============== May 22, 2024 (CST) ===============
+14:31:24.151437 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:31:24.161911 version@stat F·[0 1] S·242B[0B 242B] Sc·[0.00 0.00]
+14:31:24.161911 db@open opening
+14:31:24.161911 journal@recovery F·1
+14:31:24.161911 journal@recovery recovering @46
+14:31:24.163470 memdb@flush created L0@49 N·380 S·2KiB "btc..Net,v1292":"btc..Net,v913"
+14:31:24.163470 version@stat F·[1 1] S·3KiB[2KiB 242B] Sc·[0.25 0.00]
+14:31:24.166251 db@janitor F·4 G·0
+14:31:24.166251 db@open done T·4.34ms
+=============== May 25, 2024 (CST) ===============
+23:43:26.549175 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:43:26.559424 version@stat F·[1 1] S·3KiB[2KiB 242B] Sc·[0.25 0.00]
+23:43:26.559927 db@open opening
+23:43:26.559927 journal@recovery F·1
+23:43:26.559927 journal@recovery recovering @50
+23:43:26.562069 memdb@flush created L0@52 N·349 S·2KiB "btc..Net,v1642":"btc..Net,v1294"
+23:43:26.562572 version@stat F·[2 1] S·5KiB[5KiB 242B] Sc·[0.50 0.00]
+23:43:26.565836 db@janitor F·5 G·0
+23:43:26.565836 db@open done T·5.9092ms
+=============== May 28, 2024 (CST) ===============
+18:51:53.659269 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:51:53.676982 version@stat F·[2 1] S·5KiB[5KiB 242B] Sc·[0.50 0.00]
+18:51:53.676982 db@open opening
+18:51:53.676982 journal@recovery F·1
+18:51:53.676982 journal@recovery recovering @53
+18:51:53.679696 memdb@flush created L0@55 N·631 S·4KiB "btc..Net,v2274":"btc..Net,v1644"
+18:51:53.679696 version@stat F·[3 1] S·10KiB[10KiB 242B] Sc·[0.75 0.00]
+18:51:53.682717 db@janitor F·6 G·0
+18:51:53.682717 db@open done T·5.7344ms
+=============== May 28, 2024 (CST) ===============
+23:58:26.264776 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:58:26.275692 version@stat F·[3 1] S·10KiB[10KiB 242B] Sc·[0.75 0.00]
+23:58:26.275692 db@open opening
+23:58:26.275692 journal@recovery F·1
+23:58:26.275692 journal@recovery recovering @56
+23:58:26.277277 memdb@flush created L0@58 N·613 S·4KiB "btc..Net,v2888":"btc..Net,v2276"
+23:58:26.277781 version@stat F·[4 1] S·15KiB[15KiB 242B] Sc·[1.00 0.00]
+23:58:26.281047 db@janitor F·7 G·0
+23:58:26.281047 db@open done T·5.3549ms
+23:58:26.281577 table@compaction L0·4 -> L1·1 S·15KiB Q·2889
+23:58:26.284303 table@build created L1@61 N·3 S·242B "btc..Net,v2888":"ord..94a,v6"
+23:58:26.284303 version@stat F·[0 1] S·242B[0B 242B] Sc·[0.00 0.00]
+23:58:26.284819 table@compaction committed F-4 S-15KiB Ke·0 D·1973 T·3.2419ms
+23:58:26.284819 table@remove removed @58
+23:58:26.284819 table@remove removed @55
+23:58:26.284819 table@remove removed @52
+23:58:26.285833 table@remove removed @49
+23:58:26.285833 table@remove removed @48
+=============== May 29, 2024 (CST) ===============
+17:56:27.580050 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:56:27.592319 version@stat F·[0 1] S·242B[0B 242B] Sc·[0.00 0.00]
+17:56:27.592319 db@open opening
+17:56:27.592319 journal@recovery F·1
+17:56:27.592319 journal@recovery recovering @59
+17:56:27.593330 memdb@flush created L0@62 N·87 S·806B "btc..Net,v2976":"btc..Net,v2890"
+17:56:27.593330 version@stat F·[1 1] S·1KiB[806B 242B] Sc·[0.25 0.00]
+17:56:27.594845 db@janitor F·4 G·0
+17:56:27.594845 db@open done T·2.5264ms

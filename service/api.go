@@ -36,7 +36,7 @@ func NewGinService() *GinService {
 
 // 注入API路由
 func (g *GinService) loadGroupAPI() *gin.RouterGroup {
-	group := g.Service.Group("/api")
+	group := g.Service.Group("/assets")
 
 	//需要鉴权的接口
 	//group.Use(authMiddleware())
@@ -44,13 +44,15 @@ func (g *GinService) loadGroupAPI() *gin.RouterGroup {
 	//持有数据
 	{
 
-		group.GET("/lands/:owner",getLands)
+		//group.GET("/lands/:owner",getLands)
 		group.POST("/batch_balance",getBalances)
 
 		group.POST("/ord_call",ordCall)
 
 		//代币信息
 		group.GET("/token/:kid", getToken)
+		//批量获取代币信息
+		group.POST("/token/batch",getTokenForBatch)
 		//获取钱包持有数据
 		group.GET("/wallet/:owner", getWalletHolds)
 		//获取持有的TokenId 列表

@@ -118,7 +118,7 @@ func Transaction20(transfer20 models.Transfer20) error {
 
 	//发送地址
 	var fBalance models.Balance20
-	if transfer20.From != conf.DOMAIN {
+	if transfer20.From != conf.ZeroAddress {
 		result := tx.Table(Balance20Prefix+transfer20.Kid).Where("owner = ?", transfer20.From).First(&fBalance)
 		//如果owner之前没有数据
 		if result.Error == gorm.ErrRecordNotFound {
@@ -222,7 +222,7 @@ func Transaction721(transfer721 models.Transfer721) error {
 	}
 
 	var tHold int64
-	if transfer721.From != conf.DOMAIN {
+	if transfer721.From != conf.ZeroAddress {
 		err = tx.Table(Balance721Prefix+transfer721.Kid).Where("owner", transfer721.From).Count(&tHold).Error
 		if err != nil {
 			tx.Rollback()

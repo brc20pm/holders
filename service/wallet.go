@@ -28,6 +28,35 @@ func getToken(c *gin.Context) {
 	c.JSON(http.StatusOK, result)
 }
 
+func getTokenForBatch(c *gin.Context)  {
+	var result models.Result
+	var kids kList
+	if err := c.ShouldBind(&kids); err != nil {
+		handleError(c, err)
+		return
+	}
+	if kids.KIDS == nil{
+		handleError(c, errors.New("invalid params"))
+		return
+	}
+
+	tMap := make(map[string]models.Token)
+
+	for _, kid := range kids.KIDS {
+		token, err := db.FindToken(kid)
+		if err != nil {
+			continue
+		}
+		tMap[token.Kid] = token
+	}
+
+	result.Code = http.StatusOK
+	result.Msg = "success"
+	result.Data = tMap
+	c.JSON(http.StatusOK, result)
+}
+
+
 func getWalletHolds(c *gin.Context) {
 	var result models.Result
 	owner := c.Param("owner")

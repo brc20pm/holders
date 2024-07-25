@@ -17,7 +17,7 @@ func TestNumber(t *testing.T) {
 }
 
 func TestScanner(t *testing.T) {
-	client, err := scanner.NewClient(conf.NodeUrl, "btc-testNet")
+	client, err := scanner.NewClient(conf.NodeUrl, "btc-mainNet")
 	if err != nil {
 		fmt.Println(err)
 	}

@@ -34,6 +34,10 @@ func transfer(e jsonrpc.Event) {
 				fmt.Println("转换错误:", err)
 				return
 			}
+			fmt.Println(e.Args)
+			if e.Args["from"] == nil || e.Args["to"] == nil {
+				return
+			}
 			//记录K20转账
 			t20 := models.Transfer20{
 				Kid: e.KID,

@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	client, err := scanner.NewClient(conf.NodeUrl, "btc-testNet")
+	client, err := scanner.NewClient(conf.NodeUrl, "btc-mainNet")
 	if err != nil {
 		fmt.Println(err)
 	}
